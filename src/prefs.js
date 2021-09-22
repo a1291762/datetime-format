@@ -133,7 +133,7 @@ function buildPrefsWidget() {
 	const editWindow = new extension.imports.EditWindow.Class(preferencesBox, gladeFile, settings, language);
 
 	// Generate format options
-	extension.metadata.formatTargets.forEach((formatTarget) => extension.imports.FormatTarget.create(formatTargetsBox, formatTarget, Utilities.getBuilder(gladeFile), settings, editWindow));
+	extension.metadata.formatTargets.split(",").forEach((formatTarget) => extension.imports.FormatTarget.create(formatTargetsBox, formatTarget, Utilities.getBuilder(gladeFile), settings, editWindow));
 
 	return preferencesBox;
 }

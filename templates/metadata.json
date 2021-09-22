@@ -5,5 +5,5 @@
 	"shell-version": ${gnomeShellVersions},
 	"url": "${url}",
 	"settingsSchema": "${settingsSchema}",
-	"formatTargets": ${formatTargets}
+	"formatTargets": "${formatTargets}"
 }

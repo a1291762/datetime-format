@@ -5,7 +5,7 @@
 const GLib = imports.gi.GLib;
 
 const extension = imports.misc.extensionUtils.getCurrentExtension();
-const formatTargets = extension.metadata.formatTargets;
+const formatTargets = extension.metadata.formatTargets.split(",");
 const formatTargetObjects = extension.imports.formatTargets;
 const settings = new extension.imports.Settings.Class();
 const Utilities = extension.imports.Utilities;

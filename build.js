@@ -106,7 +106,7 @@ if (installFlag) {
 		name: extensionSettings.extension.split("-").map(capitalise).join(" "),
 		settingsSchema: settingsSchema,
 		settingsSchemaPath: "/" + settingsSchema.split(".").join("/") + "/",
-		formatTargets: JSON.stringify(formatTargets),
+		formatTargets: formatTargets.join(","),
 		settingKeys: formatTargets
 			.map((formatTarget) => formatTarget.toLowerCase())
 			.map((formatTarget) => `
