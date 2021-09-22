@@ -85,7 +85,7 @@ function dateToString(format, date = new Date()) {
                 output += date.getMinutes().toString().padStart(2, '0');
                 break;
             case 'P':
-                output =+ (date.getHours() < 12) ? 'am' : 'pm';
+                output += (date.getHours() < 12) ? 'am' : 'pm';
                 break;
             case 'R':
                 output += date.getHours().toString().padStart(2, '0')
@@ -133,8 +133,11 @@ function dateToString(format, date = new Date()) {
                 let month = date.getMonth() + 1;
                 output += month.toString().padStart(2, '0');
                 break;
+            case 'n':
+                output += '\n'
+                break;
             case 'p':
-                output =+ (date.getHours() < 12) ? 'AM' : 'PM';
+                output += (date.getHours() < 12) ? 'AM' : 'PM';
                 break;
             case 'r':
                 const MERIDIEM = (date.getHours() < 12) ? 'AM' : 'PM'
