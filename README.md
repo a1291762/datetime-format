@@ -9,12 +9,14 @@ A [Gnome](https://www.gnome.org/gnome-3/) extension which allows users to modify
 
 The datetime is updated every second and does not need any Gnome date or time settings to be modified.
 
+If Dash2Panel is being used, the status bar on every panel is updated.
+
 ## Installation
 
 To install the extension, run the build.js installation script with node:
 
 ```
-git clone https://github.com/Daniel-Khodabakhsh/datetime-format.git
+git clone https://github.com/a1291762/datetime-format.git
 cd datetime-format
 git checkout release
 node --use_strict build.js
@@ -48,8 +50,3 @@ Uninstallation can be done in various ways.
 
 [GPLv3](LICENSE.txt)
 
-## Donate
-
-The best gift is that someone somewhere finds this useful. But if someone wants to donate for the time and effort I put into this I also wouldn't mind!
-
-[![PayPal](https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypal-34px.png)](https://www.paypal.me/DanielK)
